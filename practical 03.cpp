@@ -1,5 +1,6 @@
+// Write a C++ Program to find both the largest and smallest number in an array list of integers.
+
 #include<iostream>
-#include<vector>
 using namespace std;
 
 int main(){
