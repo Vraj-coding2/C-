@@ -9,8 +9,8 @@
 using namespace std;
 int main(){
   char ch;
-  printf("Enter the chararcter:");
-  scanf("%c",&ch);
+  cout << "Enter the chararcter:";
+  cin >> ch;
 for(char i = 'A';i <= ch;i++){
   for(char j = 'A';j <= i;j++){
     cout << " " << i;
