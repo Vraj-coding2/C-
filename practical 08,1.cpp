@@ -8,11 +8,10 @@
 #include<iostream>
 using namespace std;
 int main(){
-  char n;
-  char ch = 'A';
+  char ch;
   printf("Enter the chararcter:");
-  scanf("%c",&n);
-for(char i = 'A';i <= n;i++){
+  scanf("%c",&ch);
+for(char i = 'A';i <= ch;i++){
   for(char j = 'A';j <= i;j++){
     cout << " " << i;
   }
