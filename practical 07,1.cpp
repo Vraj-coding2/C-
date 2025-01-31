@@ -1,3 +1,13 @@
+// Write a C++ Program to Print Diamond Star Pattern.  
+//       *  
+//      * * 
+//     * * * 
+//   * * * * 
+//     * * * 
+//      * *  
+//        * 
+
+
 #include<iostream>
 using namespace std;
 int main(){
