@@ -1,4 +1,4 @@
-
+//4  Write a program to find out number of even and odd out of array of size 10   
 #include<iostream>
 using namespace std;
 
