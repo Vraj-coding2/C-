@@ -9,21 +9,20 @@ class student{
 student(){ // default constructor
   cout << "...This is a student Details function..." << endl;
 }
- student(int r){ // this is a constructor overloading with same name but different parameter
+ student(int r){ // this is a constructor for parametrized
   rollno = r;
-  cout << "Student roll no is :" << rollno;
  }
 
- student(string nm){
-  name = nm;
-  cout << "student name is :" << name;
+ student(student &s1){
+  rollno = s1.rollno;
+  cout << "student rollno is :" << rollno;
  }
 };
 int main(){ 
-  student s1; 
+ student s1; 
 int rollno = 10;
-string name = "vraj";
 student s2(rollno); // calling roll no constructor
+student s3(s2); // calling copy constructor passing the object
 
 return 0;
 }
