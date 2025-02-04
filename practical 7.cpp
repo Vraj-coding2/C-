@@ -10,19 +10,36 @@ struct student
 };
 
 int main(){
-student s1;
-float avg,total;
+int n;
+cout << "Enter the number:";
+cin >> n;
+student s1[n];
+float avg[n];
+float total[n];
+for(int i = 1;i <= n;i++){
+  cout << "student :" << i << endl;
 cout << "sub 1:";
-cin >> s1.sub1;
+cin >> s1[i].sub1;
 
 cout << "sub 2:";
-cin >> s1.sub2;
+cin >> s1[i].sub2;
 
 cout << "sub 3:";
-cin >> s1.sub3;
+cin >> s1[i].sub3;
+cout << "..........." << endl;
+}
 
-total = s1.sub1 + s1.sub2 + s1.sub3;
-avg = total/3;
-cout << "Average is :" << avg << '%';
+for(int i = 1;i <= n;i++){
+  total[i] = s1[i].sub1+s1[i].sub2+s1[i].sub3;
+  avg[i] = total[i]/3;
+}
+
+for(int i = 1;i <= n;i++){
+  cout << "student :" << i << endl;
+  cout << "Student total :" << total[i] << endl;
+  cout << "Student average is :"<< avg[i] << endl;
+  cout << "..........." << endl; 
+}
+
   return 0;
 }
